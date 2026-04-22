@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+/* Custom fonts imported in HTML head */
+/* Inter for UI typography */
+/* JetBrains Mono for agent logs and code */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: rgb(99 102 241 / 0.2);
+  color: rgb(79 70 229);
+}
+
+/* Custom cursor for terminal */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
