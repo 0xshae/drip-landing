@@ -74,6 +74,14 @@ import '../styles/global.css';
 							See how it works
 						</a>
 					</div>
+					<p class="text-sm text-slate-500 mt-6">
+						<a href="#for-developers" class="inline-flex items-center gap-1 hover:text-slate-700 transition-colors">
+							Building a product? Add Drip to your app in 5 minutes.
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+							</svg>
+						</a>
+					</p>
 				</div>
 
 				<!-- Hero Visual: Before/After Comparison -->
@@ -232,14 +240,14 @@ import '../styles/global.css';
 		<section id="for-developers" class="py-24">
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="text-center max-w-2xl mx-auto mb-16">
-					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-4">Plug in once.</h2>
-					<p class="text-lg text-slate-600">Your users never pay for time they didn't use. You build the product. We handle the infrastructure.</p>
+					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-4">For developers</h2>
+					<p class="text-lg text-slate-600">Plug Drip into your BuildWithLocus app. We handle the metering, containers, and user communication. You ship the product.</p>
 				</div>
 
 				<div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
 					<!-- What you get -->
 					<div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-6">What you get</h3>
+						<h3 class="text-lg font-semibold text-slate-900 mb-6">What you get out of the box</h3>
 						<ul class="space-y-4">
 							<li class="flex items-start gap-3">
 								<div class="w-5 h-5 bg-indigo-100 rounded-full flex items-center justify-center shrink-0 mt-0.5">
@@ -248,8 +256,8 @@ import '../styles/global.css';
 									</svg>
 								</div>
 								<div>
-									<p class="font-medium text-slate-900">Per-user isolated containers</p>
-									<p class="text-sm text-slate-600">One container per customer via BuildWithLocus. Zero shared state.</p>
+									<p class="font-medium text-slate-900">Per-user isolated containers via BuildWithLocus</p>
+									<p class="text-sm text-slate-600">One container per customer, zero shared state, automatic teardown</p>
 								</div>
 							</li>
 							<li class="flex items-start gap-3">
@@ -259,8 +267,8 @@ import '../styles/global.css';
 									</svg>
 								</div>
 								<div>
-									<p class="font-medium text-slate-900">Credit metering out of the box</p>
-									<p class="text-sm text-slate-600">Define your compute events (API calls, tokens, storage). Drip tracks them.</p>
+									<p class="font-medium text-slate-900">Credit metering with @drip.meter()</p>
+									<p class="text-sm text-slate-600">Decorate any function, credits drain automatically when it runs</p>
 								</div>
 							</li>
 							<li class="flex items-start gap-3">
@@ -270,8 +278,8 @@ import '../styles/global.css';
 									</svg>
 								</div>
 								<div>
-									<p class="font-medium text-slate-900">Automatic lifecycle management</p>
-									<p class="text-sm text-slate-600">Hibernation, restore, and state preservation handled for you.</p>
+									<p class="font-medium text-slate-900">Container lifecycle management</p>
+									<p class="text-sm text-slate-600">Hibernation at $0, instant restore on top-up, state preserved in Postgres</p>
 								</div>
 							</li>
 							<li class="flex items-start gap-3">
@@ -281,8 +289,8 @@ import '../styles/global.css';
 									</svg>
 								</div>
 								<div>
-									<p class="font-medium text-slate-900">Proactive user communication</p>
-									<p class="text-sm text-slate-600">Low-credit warnings, receipts, top-up prompts via AgentMail.</p>
+									<p class="font-medium text-slate-900">Proactive user communication via AgentMail</p>
+									<p class="text-sm text-slate-600">Low-credit warnings, weekly receipts, and recharge prompts, automatic</p>
 								</div>
 							</li>
 							<li class="flex items-start gap-3">
@@ -293,7 +301,7 @@ import '../styles/global.css';
 								</div>
 								<div>
 									<p class="font-medium text-slate-900">PayWithLocus checkout embedded</p>
-									<p class="text-sm text-slate-600">USDC credit packs with one integration call.</p>
+									<p class="text-sm text-slate-600">USDC credit packs, one API call to accept payment</p>
 								</div>
 							</li>
 						</ul>
@@ -301,7 +309,7 @@ import '../styles/global.css';
 
 					<!-- Code Example -->
 					<div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-6">The integration</h3>
+						<h3 class="text-lg font-semibold text-slate-900 mb-6">5-minute integration</h3>
 						<div class="bg-slate-950 rounded-xl overflow-hidden">
 							<div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800">
 								<div class="flex gap-1.5">
@@ -309,39 +317,49 @@ import '../styles/global.css';
 									<div class="w-3 h-3 bg-amber-500 rounded-full"></div>
 									<div class="w-3 h-3 bg-emerald-500 rounded-full"></div>
 								</div>
-								<div class="flex-1 text-center text-xs text-slate-500 font-mono">example.py</div>
+								<div class="flex-1 text-center text-xs text-slate-500 font-mono">app.py</div>
 							</div>
 							<div class="p-4 font-mono text-sm overflow-x-auto">
-								<div class="text-slate-500"># 1. Define your compute events</div>
-								<div class="text-slate-300 mt-2">
-									<span class="text-indigo-400">@drip.meter</span>(cost=<span class="text-amber-400">0.007</span>)
-								</div>
-								<div class="text-slate-300">
-									<span class="text-purple-400">def</span> <span class="text-blue-400">search</span>(query: <span class="text-blue-400">str</span>):
-								</div>
-								<div class="text-slate-300 pl-4">
-									<span class="text-purple-400">return</span> exa.search(query)
-								</div>
-								<div class="text-slate-300 mt-3">
-									<span class="text-indigo-400">@drip.meter</span>(cost=<span class="text-amber-400">0.003</span>)
-								</div>
-								<div class="text-slate-300">
-									<span class="text-purple-400">def</span> <span class="text-blue-400">scrape</span>(url: <span class="text-blue-400">str</span>):
-								</div>
-								<div class="text-slate-300 pl-4">
-									<span class="text-purple-400">return</span> firecrawl.scrape(url)
-								</div>
-								<div class="text-slate-500 mt-4"># 2. Drip handles everything else:</div>
-								<div class="text-slate-500"># - balance polling</div>
-								<div class="text-slate-500"># - container hibernation at $0</div>
-								<div class="text-slate-500"># - resume on top-up</div>
-								<div class="text-slate-500"># - user notifications via AgentMail</div>
+								<div class="text-slate-500">from drip import DripClient, DripConfig</div>
+								<div class="text-slate-300"></div>
+								<div class="text-slate-300">client = <span class="text-blue-400">DripClient</span>(<span class="text-blue-400">DripConfig</span>(</div>
+								<div class="text-slate-300 pl-4">locus_api_key=<span class="text-emerald-400">"claw_dev_..."</span>,</div>
+								<div class="text-slate-300 pl-4">bwl_api_key=<span class="text-emerald-400">"claw_dev_..."</span>,</div>
+								<div class="text-slate-300">))</div>
+								<div class="text-slate-300"></div>
+								<div class="text-slate-500"># Decorate any function. Credits drain when it runs.</div>
+								<div class="text-slate-300"><span class="text-indigo-400">@client.meter</span>(cost=<span class="text-amber-400">0.007</span>, event=<span class="text-emerald-400">"search"</span>)</div>
+								<div class="text-slate-300"><span class="text-purple-400">async def</span> <span class="text-blue-400">search</span>(query: <span class="text-blue-400">str</span>, user_id: <span class="text-blue-400">str</span>):</div>
+								<div class="text-slate-300 pl-4"><span class="text-purple-400">return await</span> your_search_api(query)</div>
+								<div class="text-slate-300"></div>
+								<div class="text-slate-500"># Provision a user (spins their container, sets up wallet)</div>
+								<div class="text-slate-300"><span class="text-purple-400">await</span> client.provision_user(</div>
+								<div class="text-slate-300 pl-4">user_id=<span class="text-emerald-400">"user_abc"</span>,</div>
+								<div class="text-slate-300 pl-4">email=<span class="text-emerald-400">"user@example.com"</span>,</div>
+								<div class="text-slate-300 pl-4">initial_balance=<span class="text-amber-400">5.0</span>,</div>
+								<div class="text-slate-300">)</div>
+								<div class="text-slate-300"></div>
+								<div class="text-slate-400"># Drip handles everything else:</div>
+								<div class="text-slate-500"># ✓ balance polling every 60s</div>
+								<div class="text-slate-500"># ✓ container hibernation at $0</div>
+								<div class="text-slate-500"># ✓ instant restore on top-up</div>
+								<div class="text-slate-500"># ✓ AgentMail low-credit warnings</div>
+								<div class="text-slate-500"># ✓ itemized usage receipts</div>
 							</div>
 						</div>
-						<p class="text-sm text-slate-500 mt-4">
-							No Stripe. No webhooks. No dunning emails. Users fund their own wallet — your app just runs.
-						</p>
 					</div>
+				</div>
+
+				<div class="text-center mt-12">
+					<a href="https://pypi.org/project/drip-sdk" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
+						Install drip-sdk
+						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+						</svg>
+					</a>
+					<p class="text-sm text-slate-500 mt-4">
+						<code class="bg-slate-100 px-2 py-1 rounded">pip install drip-sdk</code> · Python 3.10+ · Async-first · MIT License · Built for BuildWithLocus
+					</p>
 				</div>
 			</div>
 		</section>
@@ -399,7 +417,7 @@ import '../styles/global.css';
 					<p class="text-lg text-slate-600">From research tools to developer CLIs — any app with episodic compute.</p>
 				</div>
 
-				<div class="grid md:grid-cols-3 gap-6">
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 					<!-- Card 1: Research Tools -->
 					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
 						<div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
@@ -442,6 +460,36 @@ import '../styles/global.css';
 							Internal tools, agents, and pipelines that run episodically.
 							Credits sit idle between runs. No monthly charge for
 							infrastructure that sleeps.
+						</p>
+					</div>
+
+					<!-- Card 4: ML/AI Training Pipelines -->
+					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+						<div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+							<svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+							</svg>
+						</div>
+						<h3 class="text-lg font-semibold text-slate-900 mb-3">ML training pipelines</h3>
+						<p class="text-slate-600 text-sm leading-relaxed">
+							Experiment tracking and model training that bursts GPU usage.
+							Pay only for compute time, not idle clusters waiting for your
+							next experiment.
+						</p>
+					</div>
+
+					<!-- Card 5: Data Processing Services -->
+					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+						<div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
+							<svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+							</svg>
+						</div>
+						<h3 class="text-lg font-semibold text-slate-900 mb-3">Data processing</h3>
+						<p class="text-slate-600 text-sm leading-relaxed">
+							ETL jobs, report generators, and analytics pipelines that run
+							on demand. Scale to zero between batches. No surprise bills
+							for forgotten cron jobs.
 						</p>
 					</div>
 				</div>
@@ -506,37 +554,97 @@ import '../styles/global.css';
 
 		<!-- Integration Docs Preview -->
 		<section id="docs" class="py-24">
+			<style>
+				/* CSS-only tabs */
+				.tab-input { display: none; }
+				.tab-label {
+					cursor: pointer;
+					padding: 0.75rem 1.5rem;
+					font-size: 0.875rem;
+					font-weight: 500;
+					color: rgb(100 116 139);
+					border-bottom: 2px solid transparent;
+					transition: all 0.15s;
+				}
+				.tab-label:hover { color: rgb(51 65 85); }
+				#tab-install:checked ~ .tab-nav label[for="tab-install"],
+				#tab-integrate:checked ~ .tab-nav label[for="tab-integrate"],
+				#tab-deploy:checked ~ .tab-nav label[for="tab-deploy"] {
+					color: rgb(99 102 241);
+					border-bottom-color: rgb(99 102 241);
+				}
+				.tab-content { display: none; }
+				#tab-install:checked ~ .tab-panels #panel-install,
+				#tab-integrate:checked ~ .tab-panels #panel-integrate,
+				#tab-deploy:checked ~ .tab-panels #panel-deploy {
+					display: block;
+					animation: fadeIn 0.2s ease;
+				}
+				@keyframes fadeIn {
+					from { opacity: 0; transform: translateY(4px); }
+					to { opacity: 1; transform: translateY(0); }
+				}
+			</style>
+
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="text-center max-w-2xl mx-auto mb-12">
 					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-4">Quick start</h2>
-					<p class="text-lg text-slate-600">From zero to metered app in 4 steps.</p>
+					<p class="text-lg text-slate-600">From zero to metered app in 3 tabs.</p>
 				</div>
 
 				<div class="max-w-3xl mx-auto">
 					<div class="bg-slate-950 rounded-2xl overflow-hidden">
-						<!-- Terminal Header -->
-						<div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800 bg-slate-900/50">
-							<div class="flex gap-1.5">
-								<div class="w-3 h-3 bg-red-500 rounded-full"></div>
-								<div class="w-3 h-3 bg-amber-500 rounded-full"></div>
-								<div class="w-3 h-3 bg-emerald-500 rounded-full"></div>
-							</div>
-							<div class="flex-1 text-center text-xs text-slate-500 font-mono">bash</div>
+						<!-- CSS Tabs -->
+						<input type="radio" name="quickstart-tabs" id="tab-install" class="tab-input" checked>
+						<input type="radio" name="quickstart-tabs" id="tab-integrate" class="tab-input">
+						<input type="radio" name="quickstart-tabs" id="tab-deploy" class="tab-input">
+
+						<!-- Tab Navigation -->
+						<div class="tab-nav flex border-b border-slate-800 bg-slate-900/30">
+							<label for="tab-install" class="tab-label">Install</label>
+							<label for="tab-integrate" class="tab-label">Integrate</label>
+							<label for="tab-deploy" class="tab-label">Deploy</label>
 						</div>
 
-						<!-- Code Content -->
-						<div class="p-6 font-mono text-sm space-y-1">
-							<div class="text-slate-500"># 1. Install</div>
-							<div class="text-slate-300">pip install drip-sdk</div>
-							<div class="text-slate-500 mt-4"># 2. Initialize</div>
-							<div class="text-slate-300">drip init --locus-key <span class="text-amber-400">YOUR_CLAW_KEY</span></div>
-							<div class="text-slate-500 mt-4"># 3. Decorate your compute functions</div>
-							<div class="text-slate-300"><span class="text-indigo-400">@drip.meter</span>(cost=<span class="text-amber-400">0.007</span>, event=<span class="text-emerald-400">"exa_search"</span>)</div>
-							<div class="text-slate-300"><span class="text-purple-400">def</span> <span class="text-blue-400">search</span>(query):</div>
-							<div class="text-slate-300 pl-4">...</div>
-							<div class="text-slate-500 mt-4"># 4. Deploy on BuildWithLocus</div>
-							<div class="text-slate-300">git push locus main</div>
-							<div class="text-slate-500"># Drip handles the rest</div>
+						<!-- Tab Panels -->
+						<div class="tab-panels">
+							<!-- Install Panel -->
+							<div id="panel-install" class="tab-content p-6 font-mono text-sm">
+								<div class="text-slate-500 mb-2"># Install the SDK</div>
+								<div class="text-slate-300">pip install drip-sdk</div>
+								<div class="text-slate-500 mt-4 mb-2"># Or with poetry</div>
+								<div class="text-slate-300">poetry add drip-sdk</div>
+								<div class="text-slate-500 mt-4 mb-2"># Requirements</div>
+								<div class="text-slate-400">Python 3.10+ · Async-first · Built for BuildWithLocus</div>
+							</div>
+
+							<!-- Integrate Panel -->
+							<div id="panel-integrate" class="tab-content p-6 font-mono text-sm">
+								<div class="text-slate-500">from drip import DripClient, DripConfig</div>
+								<div class="text-slate-300"></div>
+								<div class="text-slate-300">client = <span class="text-blue-400">DripClient</span>(<span class="text-blue-400">DripConfig</span>(</div>
+								<div class="text-slate-300 pl-4">locus_api_key=<span class="text-emerald-400">"claw_dev_..."</span>,</div>
+								<div class="text-slate-300 pl-4">bwl_api_key=<span class="text-emerald-400">"claw_dev_..."</span>,</div>
+								<div class="text-slate-300">))</div>
+								<div class="text-slate-300"></div>
+								<div class="text-slate-500"># Meter any function</div>
+								<div class="text-slate-300"><span class="text-indigo-400">@client.meter</span>(cost=<span class="text-amber-400">0.007</span>)</div>
+								<div class="text-slate-300"><span class="text-purple-400">async def</span> <span class="text-blue-400">process</span>(data):</div>
+								<div class="text-slate-300 pl-4"><span class="text-purple-400">return await</span> llm.complete(data)</div>
+							</div>
+
+							<!-- Deploy Panel -->
+							<div id="panel-deploy" class="tab-content p-6 font-mono text-sm">
+								<div class="text-slate-500 mb-2"># Deploy to BuildWithLocus</div>
+								<div class="text-slate-300">git push locus main</div>
+								<div class="text-slate-500 mt-4 mb-2"># Or use the BWL CLI</div>
+								<div class="text-slate-300">bwl deploy --env production</div>
+								<div class="text-slate-500 mt-4 mb-2"># Drip handles automatically:</div>
+								<div class="text-slate-400">✓ Per-user container provisioning</div>
+								<div class="text-slate-400">✓ Credit tracking & hibernation</div>
+								<div class="text-slate-400">✓ Low-balance notifications</div>
+								<div class="text-slate-400">✓ Instant restore on top-up</div>
+							</div>
 						</div>
 					</div>
 
