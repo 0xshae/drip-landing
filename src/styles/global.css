@@ -4,21 +4,237 @@
 
 /* Custom fonts imported in HTML head */
 /* Inter for UI typography */
-/* JetBrains Mono for agent logs and code */
+/* JetBrains Mono for terminal, code, and agent logs */
 
-/* Smooth scrolling */
+:root {
+  /* Locus-inspired color palette */
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #111111;
+  --bg-card: #0D0D0D;
+  --border-subtle: #1F1F1F;
+  --border-hover: #2A2A2A;
+
+  /* Text colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+  --text-dim: #52525B;
+
+  /* Accent colors */
+  --accent-cyan: #00B8D9;
+  --accent-blue: #3B82F6;
+  --accent-green: #10B981;
+  --accent-amber: #F59E0B;
+  --accent-red: #EF4444;
+
+  /* Semantic */
+  --status-active: #10B981;
+  --status-warning: #F59E0B;
+  --status-error: #EF4444;
+  --status-paused: #EF4444;
+}
+
+/* Base styles */
 html {
   scroll-behavior: smooth;
 }
 
-/* Selection styling */
-::selection {
-  background-color: rgb(99 102 241 / 0.2);
-  color: rgb(79 70 229);
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom cursor for terminal */
+/* Selection styling - subtle */
+::selection {
+  background-color: rgba(59, 130, 246, 0.3);
+  color: var(--text-primary);
+}
+
+/* Terminal animations */
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Custom utility classes for Locus aesthetic */
+@layer utilities {
+  /* Text utilities */
+  .text-dim {
+    color: var(--text-dim);
+  }
+
+  .text-muted {
+    color: var(--text-muted);
+  }
+
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+
+  /* Background utilities */
+  .bg-locus-dark {
+    background-color: var(--bg-primary);
+  }
+
+  .bg-locus-card {
+    background-color: var(--bg-card);
+  }
+
+  .bg-locus-secondary {
+    background-color: var(--bg-secondary);
+  }
+
+  /* Border utilities */
+  .border-locus {
+    border-color: var(--border-subtle);
+  }
+
+  .border-locus-hover {
+    border-color: var(--border-hover);
+  }
+
+  /* Terminal text */
+  .font-terminal {
+    font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Consolas', monospace;
+  }
+
+  /* Pulsing dot for status indicators */
+  .pulse-dot {
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  /* Terminal line animation */
+  .terminal-line {
+    animation: slide-up 0.15s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* Stagger delays for terminal lines */
+  .terminal-line:nth-child(1) { animation-delay: 0s; }
+  .terminal-line:nth-child(2) { animation-delay: 0.1s; }
+  .terminal-line:nth-child(3) { animation-delay: 0.2s; }
+  .terminal-line:nth-child(4) { animation-delay: 0.3s; }
+  .terminal-line:nth-child(5) { animation-delay: 0.4s; }
+  .terminal-line:nth-child(6) { animation-delay: 0.5s; }
+  .terminal-line:nth-child(7) { animation-delay: 0.6s; }
+  .terminal-line:nth-child(8) { animation-delay: 0.7s; }
+  .terminal-line:nth-child(9) { animation-delay: 0.8s; }
+  .terminal-line:nth-child(10) { animation-delay: 0.9s; }
+
+  /* Blinking cursor */
+  .cursor-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  /* Gradient text */
+  .text-gradient-cyan {
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Status badge colors */
+  .badge-active { color: var(--status-active); }
+  .badge-warning { color: var(--status-warning); }
+  .badge-error { color: var(--status-error); }
+
+  /* Divider */
+  .divider-locus {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+  }
+}
+
+/* Code block styling */
+pre {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.5rem;
+}
+
+code {
+  font-family: 'JetBrains Mono', 'SF Mono', monospace;
+  font-size: 0.875rem;
+}
+
+/* Link hover states */
+a {
+  transition: color 0.15s ease;
+}
+
+/* Button styling for Locus aesthetic */
+.btn-locus {
+  background-color: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.btn-locus:hover {
+  border-color: var(--border-hover);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-locus-primary {
+  background-color: var(--text-primary);
+  border-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.btn-locus-primary:hover {
+  background-color: var(--text-secondary);
+  border-color: var(--text-secondary);
+}
+
+/* Custom scrollbar for terminal-like elements */
+.terminal-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.terminal-scroll::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 4px;
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
 }
