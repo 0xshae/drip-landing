@@ -1,731 +1,667 @@
 ---
-// Drip Landing Page
-// Pay-as-you-go compute infrastructure for developers
-// Positioning: "Turn your app into a utility. Users pay for compute, not calendar months."
+// Drip Landing Page — B2B2C Middleware Positioning
+// Locus Aesthetic Edition: Dark theme, animated terminal demo
+// Target: SaaS founders, CTOs, product teams
 import '../styles/global.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Drip — Turn your app into a utility. Users pay for compute, not calendar months. Pay-as-you-go infrastructure for developers." />
-		<title>Drip — Pay for Compute. Not for Calendar Months.</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-	</head>
-	<body class="font-sans antialiased text-slate-900 bg-white">
-		<!-- Header -->
-		<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/50">
-			<nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-				<div class="flex items-center gap-2">
-					<div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-						<svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2c.552 0 1 .448 1 1v2.101a7.002 7.002 0 011.913 1.5l1.792-1.035c.478-.276 1.09-.112 1.366.366s.112 1.09-.366 1.366l-1.792 1.035a7.002 7.002 0 010 3.336l1.792 1.035c.478.276.642.888.366 1.366s-.888.642-1.366.366l-1.792-1.035A7.002 7.002 0 0113 17.899V20c0 .552-.448 1-1 1s-1-.448-1-1v-2.101a7.002 7.002 0 01-1.913-1.5l-1.792 1.035c-.478.276-1.09.112-1.366-.366s-.112-1.09.366-1.366l1.792-1.035a7.002 7.002 0 010-3.336l-1.792-1.035c-.478-.276-.642-.888-.366-1.366s.888-.642 1.366-.366l1.792 1.035A7.002 7.002 0 0111 6.101V4c0-.552.448-1 1-1z"/>
-						</svg>
-					</div>
-					<span class="font-semibold text-lg tracking-tight">drip</span>
-				</div>
-				<div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-					<a href="#how-it-works" class="hover:text-slate-900 transition-colors">How it works</a>
-					<a href="#for-developers" class="hover:text-slate-900 transition-colors">For developers</a>
-					<a href="#pricing" class="hover:text-slate-900 transition-colors">Pricing</a>
-					<a href="#docs" class="hover:text-slate-900 transition-colors">Docs</a>
-				</div>
-				<div class="flex items-center gap-4">
-					<a href="https://github.com/0xshae/drip" class="text-slate-600 hover:text-slate-900 transition-colors">
-						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-							<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-						</svg>
-					</a>
-					<a href="#docs" class="bg-indigo-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors">
-						Start building
-					</a>
-				</div>
-			</nav>
-		</header>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Drip — Autonomous billing intelligence for SaaS. Bridge the gap between subscription tiers and consumption reality." />
+    <title>Drip — Your Subscription Model Is Leaking Revenue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body class="antialiased bg-[#0A0A0A] text-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-[#1F1F1F]">
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-[#00B8D9] rounded-lg flex items-center justify-center">
+            <svg class="w-5 h-5 text-[#0A0A0A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 2v20M2 12h20"/>
+            </svg>
+          </div>
+          <span class="font-semibold text-lg tracking-tight">drip</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-[#A1A1AA]">
+          <a href="#problem" class="hover:text-white transition-colors">The Problem</a>
+          <a href="#solution" class="hover:text-white transition-colors">How It Works</a>
+          <a href="#integration" class="hover:text-white transition-colors">Integration</a>
+          <a href="#early-access" class="hover:text-white transition-colors">Early Access</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#early-access" class="bg-white text-[#0A0A0A] px-4 py-2 rounded-md text-sm font-medium hover:bg-[#A1A1AA] transition-colors">
+            Get Early Access
+          </a>
+        </div>
+      </nav>
+    </header>
 
-		<!-- Hero Section -->
-		<section class="pt-32 pb-20 lg:pt-40 lg:pb-32">
-			<div class="max-w-7xl mx-auto px-6">
-				<!-- Headline -->
-				<div class="max-w-4xl mx-auto text-center mb-16">
-					<h1 class="text-5xl lg:text-7xl font-semibold tracking-tight text-slate-900 leading-[1.1] mb-6">
-						Pay for compute.<br/>Not for calendar months.
-					</h1>
-					<p class="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8">
-						Drip turns your app into a pay-as-you-drink utility. Users deposit credits,
-						their container runs, credits drain on actual usage. When they're out — the
-						container hibernates, state intact. When they top up — it resumes instantly.
-						No subscriptions. No waste. No churn from people who forgot to cancel.
-					</p>
-					<div class="flex flex-wrap justify-center gap-4">
-						<a href="#docs" class="bg-indigo-600 text-white px-8 py-4 rounded-xl text-base font-medium hover:bg-indigo-700 transition-all hover:shadow-lg hover:shadow-indigo-500/25 inline-flex items-center gap-2">
-							Add Drip to your app
-							<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-							</svg>
-						</a>
-						<a href="#how-it-works" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl text-base font-medium hover:bg-slate-50 transition-colors">
-							See how it works
-						</a>
-					</div>
-					<p class="text-sm text-slate-500 mt-6">
-						<a href="#for-developers" class="inline-flex items-center gap-1 hover:text-slate-700 transition-colors">
-							Building a product? Add Drip to your app in 5 minutes.
-							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-							</svg>
-						</a>
-					</p>
-				</div>
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 lg:pt-40 lg:pb-32">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+          <h1 class="text-4xl lg:text-6xl font-semibold tracking-tight text-white leading-[1.1] mb-6">
+            Your subscription model is<br/>
+            <span class="text-gradient-cyan">leaking revenue.</span>
+          </h1>
+          <p class="text-lg lg:text-xl text-[#A1A1AA] leading-relaxed max-w-2xl mx-auto mb-8">
+            AI apps don't fit into neat monthly boxes. Some users blow through tiers. Others barely touch them.
+            Drip bridges the gap — autonomous billing intelligence for the messier, more honest truth of AI consumption.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#early-access" class="bg-[#00B8D9] text-[#0A0A0A] px-8 py-4 rounded-md text-base font-medium hover:bg-[#00a5c4] transition-all inline-flex items-center gap-2">
+              Get Early Access
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a href="#problem" class="bg-transparent text-white border border-[#2A2A2A] px-8 py-4 rounded-md text-base font-medium hover:border-[#71717A] transition-colors">
+              See the problem
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<!-- Hero Visual: Before/After Comparison -->
-				<div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-					<!-- Without Drip (Subscription) -->
-					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-						<div class="flex items-center gap-2 mb-6">
-							<div class="w-2 h-2 bg-red-500 rounded-full"></div>
-							<span class="text-sm font-medium text-slate-600">Without Drip</span>
-						</div>
-						<!-- Calendar Grid -->
-						<div class="grid grid-cols-7 gap-2 mb-6">
-							{Array.from({ length: 30 }).map((_, i) => (
-								<div class={`h-10 rounded-lg flex items-center justify-center text-xs font-medium ${
-									i === 5 || i === 18
-										? 'bg-indigo-100 text-indigo-700 border-2 border-indigo-300'
-										: 'bg-slate-200 text-slate-400'
-								}`}>
-									{i + 1}
-								</div>
-							))}
-						</div>
-						<div class="flex items-center justify-between pt-4 border-t border-slate-200">
-							<div>
-								<p class="text-sm text-slate-500">Monthly subscription</p>
-								<p class="text-2xl font-semibold text-slate-900">$29.00</p>
-							</div>
-							<div class="text-right">
-								<p class="text-sm text-slate-500">Days actually used</p>
-								<p class="text-2xl font-semibold text-red-600">2 days</p>
-							</div>
-						</div>
-						<p class="text-sm text-red-600 font-medium mt-4">93% wasted</p>
-					</div>
+    <!-- Live Terminal Demo Section -->
+    <section class="py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="relative">
+          <!-- Terminal Glow -->
+          <div class="absolute -inset-1 bg-gradient-to-r from-[#00B8D9]/20 to-[#3B82F6]/20 rounded-lg blur-2xl opacity-30"></div>
 
-					<!-- With Drip (Pay-as-you-go) -->
-					<div class="bg-indigo-50 rounded-2xl p-8 border border-indigo-200">
-						<div class="flex items-center gap-2 mb-6">
-							<div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
-							<span class="text-sm font-medium text-indigo-900">With Drip</span>
-						</div>
-						<!-- Credit Gauge -->
-						<div class="mb-6">
-							<div class="flex items-end justify-between mb-3">
-								<div>
-									<p class="text-sm text-indigo-600/70">Credits consumed</p>
-									<p class="text-4xl font-semibold text-indigo-900">$2.10</p>
-								</div>
-								<div class="text-right">
-									<p class="text-sm text-indigo-600/70">From deposit</p>
-									<p class="text-xl font-medium text-indigo-700">$5.00</p>
-								</div>
-							</div>
-							<div class="h-3 bg-indigo-100 rounded-full overflow-hidden">
-								<div class="h-full w-[42%] bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full"></div>
-							</div>
-						</div>
-						<!-- Receipt -->
-						<div class="bg-white rounded-xl p-4 border border-indigo-100">
-							<p class="text-xs font-medium text-slate-500 mb-3">Compute breakdown</p>
-							<div class="space-y-2 text-sm">
-								<div class="flex justify-between">
-									<span class="text-slate-600">47 Exa searches</span>
-									<span class="font-medium text-slate-900">$0.33</span>
-								</div>
-								<div class="flex justify-between">
-									<span class="text-slate-600">12 Firecrawl scrapes</span>
-									<span class="font-medium text-slate-900">$0.04</span>
-								</div>
-								<div class="flex justify-between">
-									<span class="text-slate-600">3 Claude syntheses</span>
-									<span class="font-medium text-slate-900">$0.36</span>
-								</div>
-								<div class="flex justify-between">
-									<span class="text-slate-600">42 min compute</span>
-									<span class="font-medium text-slate-900">$1.37</span>
-								</div>
-							</div>
-						</div>
-						<p class="text-sm text-emerald-600 font-medium mt-4">Paid exactly what they used</p>
-					</div>
-				</div>
-			</div>
-		</section>
+          <!-- Terminal Window -->
+          <div class="relative bg-[#0D0D0D] rounded-lg border border-[#1F1F1F] overflow-hidden">
+            <!-- Terminal Header -->
+            <div class="flex items-center gap-2 px-4 py-3 border-b border-[#1F1F1F] bg-[#111111]">
+              <div class="flex gap-1.5">
+                <div class="w-3 h-3 bg-[#EF4444] rounded-full"></div>
+                <div class="w-3 h-3 bg-[#F59E0B] rounded-full"></div>
+                <div class="w-3 h-3 bg-[#10B981] rounded-full"></div>
+              </div>
+              <div class="flex-1 text-center">
+                <span class="text-xs font-mono text-[#52525B]">Drip Agent — Live Demo</span>
+              </div>
+            </div>
 
-		<!-- How It Works (For Users) -->
-		<section id="how-it-works" class="py-24 bg-slate-50/50">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center max-w-2xl mx-auto mb-16">
-					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-4">Software that works like electricity</h2>
-					<p class="text-lg text-slate-600">Users pay for what they draw. Not a flat fee for the wires.</p>
-				</div>
+            <!-- Terminal Content -->
+            <div id="terminal" class="p-6 font-mono text-sm h-[320px] overflow-y-auto terminal-scroll">
+              <div id="terminal-content" class="space-y-1">
+                <!-- Lines will be injected here by JavaScript -->
+              </div>
+            </div>
 
-				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-					<!-- Step 1: Deposit -->
-					<div class="bg-white rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-2">Deposit</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							Deposit USDC. That's your credit balance — your fuel.
-						</p>
-					</div>
+            <!-- Terminal Status Bar -->
+            <div class="flex items-center justify-between px-4 py-2 border-t border-[#1F1F1F] bg-[#111111]">
+              <div class="flex items-center gap-4 text-xs text-[#52525B]">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 bg-[#10B981] rounded-full pulse-dot"></span>
+                  Agent Active
+                </span>
+                <span>|</span>
+                <span>Monitoring 247 users</span>
+              </div>
+              <div class="text-xs text-[#52525B]">
+                <span class="text-[#00B8D9]">●</span> Drip v0.8.2
+              </div>
+            </div>
+          </div>
+        </div>
 
-					<!-- Step 2: Run -->
-					<div class="bg-white rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-2">Run</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							Open the app. BuildWithLocus spins your personal container. Credits drain based on actual compute.
-						</p>
-					</div>
+        <p class="text-center text-sm text-[#71717A] mt-6 max-w-2xl mx-auto">
+          Watch the agent catch a customer before the " pricing cliff" forces them to churn.
+        </p>
+      </div>
+    </section>
 
-					<!-- Step 3: Hibernate -->
-					<div class="bg-white rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-2">Hibernate</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							Credits hit zero. The container hibernates cleanly. Your data, history, and preferences are preserved.
-						</p>
-					</div>
+    <!-- The Problem: Subscription Model is Broken for AI -->
+    <section id="problem" class="py-24 bg-[#111111]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-[#00B8D9] text-sm font-medium tracking-wider uppercase">The Problem</span>
+          <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mt-4 mb-6">
+            The subscription model was built for software that behaves predictably.
+          </h2>
+          <p class="text-lg text-[#A1A1AA]">
+            AI apps don't. One customer might generate 50 images today, 500 tomorrow, zero next week.
+            Fixed tiers punish both the power user and the occasional visitor.
+          </p>
+        </div>
+      </div>
+    </section>
 
-					<!-- Step 4: Resume -->
-					<div class="bg-white rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-2">Resume</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							Top up any amount. The container resumes exactly where it left off. No re-onboarding. Instant.
-						</p>
-					</div>
-				</div>
+    <!-- The Problem: Pricing Cliff -->
+    <section class="py-24 border-b border-[#1F1F1F]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-[#F59E0B] text-sm font-medium tracking-wider uppercase">Revenue Leakage</span>
+            <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mt-4 mb-6">
+              The Pricing Cliff
+            </h2>
+            <p class="text-lg text-[#A1A1AA] mb-6">
+              User A generates 2,900 AI responses this month. They're on the $50 tier that includes 3,000.
+            </p>
+            <p class="text-lg text-[#A1A1AA] mb-6">
+              User B generates 3,100. They're forced onto the $100 tier — 70% more expensive for just 200 extra calls.
+            </p>
+            <p class="text-lg text-white font-medium">
+              Every month, thousands of users like User B churn at the cliff instead of paying a fair price for their actual usage.
+            </p>
+          </div>
 
-				<p class="text-center text-sm text-slate-500 mt-10 max-w-2xl mx-auto">
-					The AI agent running underneath monitors your balance in real time, warns you before you run out,
-					and makes smart tradeoffs to extend your runtime. <span class="text-slate-700">It's the engine. You don't need to think about it.</span>
-				</p>
-			</div>
-		</section>
+          <div class="bg-[#0D0D0D] rounded-lg border border-[#1F1F1F] p-8">
+            <div class="space-y-6">
+              <!-- User A -->
+              <div class="pb-6 border-b border-[#1F1F1F]">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-sm font-medium text-[#A1A1AA]">User A</span>
+                  <span class="text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-1 rounded">Happy customer</span>
+                </div>
+                <div class="flex items-center gap-4 mb-2">
+                  <div class="flex-1 h-2 bg-[#1F1F1F] rounded-full overflow-hidden">
+                    <div class="h-full w-[97%] bg-[#10B981] rounded-full"></div>
+                  </div>
+                  <span class="text-sm font-mono text-[#71717A]">2,900 / 3,000</span>
+                </div>
+                <p class="text-sm text-[#71717A]">Pays $50 — uses 97% of tier. Content.</p>
+              </div>
 
-		<!-- For Developers Section -->
-		<section id="for-developers" class="py-24">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center max-w-2xl mx-auto mb-16">
-					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-4">For developers</h2>
-					<p class="text-lg text-slate-600">Plug Drip into your BuildWithLocus app. We handle the metering, containers, and user communication. You ship the product.</p>
-				</div>
+              <!-- User B -->
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-sm font-medium text-[#A1A1AA]">User B</span>
+                  <span class="text-xs text-[#EF4444] bg-[#EF4444]/10 px-2 py-1 rounded">Churn risk</span>
+                </div>
+                <div class="flex items-center gap-4 mb-2">
+                  <div class="flex-1 h-2 bg-[#1F1F1F] rounded-full overflow-hidden">
+                    <div class="h-full w-[103%] bg-[#F59E0B] rounded-full"></div>
+                  </div>
+                  <span class="text-sm font-mono text-[#71717A]">3,100 / 3,000</span>
+                </div>
+                <p class="text-sm text-[#71717A]">Forced to $100 tier for 200 extra calls. Feels ripped off.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-					<!-- What you get -->
-					<div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-6">What you get out of the box</h3>
-						<ul class="space-y-4">
-							<li class="flex items-start gap-3">
-								<div class="w-5 h-5 bg-indigo-100 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-									<svg class="w-3 h-3 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-									</svg>
-								</div>
-								<div>
-									<p class="font-medium text-slate-900">Per-user isolated containers via BuildWithLocus</p>
-									<p class="text-sm text-slate-600">One container per customer, zero shared state, automatic teardown</p>
-								</div>
-							</li>
-							<li class="flex items-start gap-3">
-								<div class="w-5 h-5 bg-indigo-100 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-									<svg class="w-3 h-3 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-									</svg>
-								</div>
-								<div>
-									<p class="font-medium text-slate-900">Credit metering with @drip.meter()</p>
-									<p class="text-sm text-slate-600">Decorate any function, credits drain automatically when it runs</p>
-								</div>
-							</li>
-							<li class="flex items-start gap-3">
-								<div class="w-5 h-5 bg-indigo-100 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-									<svg class="w-3 h-3 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-									</svg>
-								</div>
-								<div>
-									<p class="font-medium text-slate-900">Container lifecycle management</p>
-									<p class="text-sm text-slate-600">Hibernation at $0, instant restore on top-up, state preserved in Postgres</p>
-								</div>
-							</li>
-							<li class="flex items-start gap-3">
-								<div class="w-5 h-5 bg-indigo-100 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-									<svg class="w-3 h-3 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-									</svg>
-								</div>
-								<div>
-									<p class="font-medium text-slate-900">Proactive user communication via AgentMail</p>
-									<p class="text-sm text-slate-600">Low-credit warnings, weekly receipts, and recharge prompts, automatic</p>
-								</div>
-							</li>
-							<li class="flex items-start gap-3">
-								<div class="w-5 h-5 bg-indigo-100 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-									<svg class="w-3 h-3 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-									</svg>
-								</div>
-								<div>
-									<p class="font-medium text-slate-900">PayWithLocus checkout embedded</p>
-									<p class="text-sm text-slate-600">USDC credit packs, one API call to accept payment</p>
-								</div>
-							</li>
-						</ul>
-					</div>
+    <!-- The Problem: Waste -->
+    <section class="py-24 border-b border-[#1F1F1F]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 bg-[#0D0D0D] rounded-lg border border-[#1F1F1F] p-8">
+            <div class="space-y-6">
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-[#71717A]">User sits idle</span>
+                <span class="text-xs text-[#F59E0B]">23 days</span>
+              </div>
+              <div class="h-24 flex items-end gap-1">
+                {Array.from({ length: 30 }).map((_, i) => (
+                  <div
+                    class={`flex-1 rounded-t ${
+                      i === 0 || i === 2 || i === 29
+                        ? 'bg-[#3B82F6] h-[60%]'
+                        : 'bg-[#1F1F1F] h-[10%]'
+                    }`}
+                  />
+                ))}
+              </div>
+              <div class="pt-4 border-t border-[#1F1F1F]">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm text-[#A1A1AA]">Subscription paid</span>
+                  <span class="text-lg font-semibold text-white">$49.00</span>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                  <span class="text-sm text-[#A1A1AA]">Value received</span>
+                  <span class="text-lg font-semibold text-[#EF4444]">$3.20</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<!-- Code Example -->
-					<div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-6">5-minute integration</h3>
-						<div class="bg-slate-950 rounded-xl overflow-hidden">
-							<div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800">
-								<div class="flex gap-1.5">
-									<div class="w-3 h-3 bg-red-500 rounded-full"></div>
-									<div class="w-3 h-3 bg-amber-500 rounded-full"></div>
-									<div class="w-3 h-3 bg-emerald-500 rounded-full"></div>
-								</div>
-								<div class="flex-1 text-center text-xs text-slate-500 font-mono">app.py</div>
-							</div>
-							<div class="p-4 font-mono text-sm overflow-x-auto">
-								<div class="text-slate-500">from drip import DripClient, DripConfig</div>
-								<div class="text-slate-300"></div>
-								<div class="text-slate-300">client = <span class="text-blue-400">DripClient</span>(<span class="text-blue-400">DripConfig</span>(</div>
-								<div class="text-slate-300 pl-4">locus_api_key=<span class="text-emerald-400">"claw_dev_..."</span>,</div>
-								<div class="text-slate-300 pl-4">bwl_api_key=<span class="text-emerald-400">"claw_dev_..."</span>,</div>
-								<div class="text-slate-300">))</div>
-								<div class="text-slate-300"></div>
-								<div class="text-slate-500"># Decorate any function. Credits drain when it runs.</div>
-								<div class="text-slate-300"><span class="text-indigo-400">@client.meter</span>(cost=<span class="text-amber-400">0.007</span>, event=<span class="text-emerald-400">"search"</span>)</div>
-								<div class="text-slate-300"><span class="text-purple-400">async def</span> <span class="text-blue-400">search</span>(query: <span class="text-blue-400">str</span>, user_id: <span class="text-blue-400">str</span>):</div>
-								<div class="text-slate-300 pl-4"><span class="text-purple-400">return await</span> your_search_api(query)</div>
-								<div class="text-slate-300"></div>
-								<div class="text-slate-500"># Provision a user (spins their container, sets up wallet)</div>
-								<div class="text-slate-300"><span class="text-purple-400">await</span> client.provision_user(</div>
-								<div class="text-slate-300 pl-4">user_id=<span class="text-emerald-400">"user_abc"</span>,</div>
-								<div class="text-slate-300 pl-4">email=<span class="text-emerald-400">"user@example.com"</span>,</div>
-								<div class="text-slate-300 pl-4">initial_balance=<span class="text-amber-400">5.0</span>,</div>
-								<div class="text-slate-300">)</div>
-								<div class="text-slate-300"></div>
-								<div class="text-slate-400"># Drip handles everything else:</div>
-								<div class="text-slate-500"># ✓ balance polling every 60s</div>
-								<div class="text-slate-500"># ✓ container hibernation at $0</div>
-								<div class="text-slate-500"># ✓ instant restore on top-up</div>
-								<div class="text-slate-500"># ✓ AgentMail low-credit warnings</div>
-								<div class="text-slate-500"># ✓ itemized usage receipts</div>
-							</div>
-						</div>
-					</div>
-				</div>
+          <div class="order-1 lg:order-2">
+            <span class="text-[#EF4444] text-sm font-medium tracking-wider uppercase">The Waste Problem</span>
+            <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mt-4 mb-6">
+              Subscription Guilt
+            </h2>
+            <p class="text-lg text-[#A1A1AA] mb-6">
+              Light users sit on $50/mo subscriptions they barely touch. They feel guilty.
+              They rationalize canceling. "I'll resubscribe when I need it."
+            </p>
+            <p class="text-lg text-[#A1A1AA]">
+              They rarely do. The churn isn't because your product is bad — it's because the billing model doesn't fit usage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="text-center mt-12">
-					<a href="https://pypi.org/project/drip-sdk" class="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors">
-						Install drip-sdk
-						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-						</svg>
-					</a>
-					<p class="text-sm text-slate-500 mt-4">
-						<code class="bg-slate-100 px-2 py-1 rounded">pip install drip-sdk</code> · Python 3.10+ · Async-first · MIT License · Built for BuildWithLocus
-					</p>
-				</div>
-			</div>
-		</section>
+    <!-- The Solution -->
+    <section id="solution" class="py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-[#00B8D9] text-sm font-medium tracking-wider uppercase">The Solution</span>
+          <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mt-4 mb-6">
+            Drip sits between your tiers and their usage
+          </h2>
+          <p class="text-lg text-[#A1A1AA]">
+            An autonomous agent that monitors every customer's actual consumption.
+            When someone approaches a tier boundary, Drip intervenes — catching them before the cliff.
+          </p>
+        </div>
 
-		<!-- The Agent Engine Section -->
-		<section class="py-24 bg-slate-900">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center max-w-2xl mx-auto mb-8">
-					<h2 class="text-4xl font-semibold tracking-tight text-white mb-4">There's an agent running underneath.</h2>
-					<p class="text-lg text-slate-400">You'll never need to think about it. But here's what it's doing for your users right now:</p>
-				</div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Feature 1 -->
+          <div class="bg-[#0D0D0D] rounded-lg p-8 border border-[#1F1F1F] hover:border-[#2A2A2A] transition-colors">
+            <div class="w-12 h-12 bg-[#00B8D9]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#00B8D9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Real-time metering</h3>
+            <p class="text-[#A1A1AA] text-sm leading-relaxed">
+              Track every API call, every generation, every compute unit with one decorator.
+              <code class="text-[#00B8D9]">@drip.meter(cost=0.007)</code>
+            </p>
+          </div>
 
-				<div class="max-w-4xl mx-auto">
-					<div class="relative">
-						<div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-emerald-500 rounded-2xl blur-2xl opacity-20"></div>
-						<div class="relative bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden">
-							<!-- Terminal Header -->
-							<div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800 bg-slate-900/50">
-								<div class="flex gap-1.5">
-									<div class="w-3 h-3 bg-red-500 rounded-full"></div>
-									<div class="w-3 h-3 bg-amber-500 rounded-full"></div>
-									<div class="w-3 h-3 bg-emerald-500 rounded-full"></div>
-								</div>
-								<div class="flex-1 text-center text-xs text-slate-500 font-mono">drip-agent.log</div>
-							</div>
+          <!-- Feature 2 -->
+          <div class="bg-[#0D0D0D] rounded-lg p-8 border border-[#1F1F1F] hover:border-[#2A2A2A] transition-colors">
+            <div class="w-12 h-12 bg-[#3B82F6]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Autonomous intervention</h3>
+            <p class="text-[#A1A1AA] text-sm leading-relaxed">
+              The agent detects tier-cliff risk. Offers pay-as-you-go top-ups.
+              Suggests plan switches. Catches customers before they churn.
+            </p>
+          </div>
 
-							<!-- Terminal Content -->
-							<div class="p-6 font-mono text-sm space-y-2">
-								<div class="text-slate-500"><span class="text-slate-600">[14:02:00]</span> <span class="text-indigo-400">Drip:</span> checking balance for user_8f2a1... 0.45 USDC remaining</div>
-								<div class="text-slate-500"><span class="text-slate-600">[14:02:01]</span> <span class="text-indigo-400">Drip:</span> burn rate 0.02/min → 22 min of runtime left</div>
-								<div class="text-slate-500"><span class="text-slate-600">[14:03:15]</span> <span class="text-amber-400">Drip:</span> sent low-credit warning to user via AgentMail</div>
-								<div class="text-slate-500"><span class="text-slate-600">[14:03:16]</span> <span class="text-amber-400">Drip:</span> reducing crawl depth 5→2 to extend runtime by 18 min</div>
-								<div class="text-slate-500"><span class="text-slate-600">[14:25:00]</span> <span class="text-indigo-400">Drip:</span> balance $0.00 — flushing state to Postgres</div>
-								<div class="text-slate-500"><span class="text-slate-600">[14:25:02]</span> <span class="text-red-400">Drip:</span> container hibernated via BuildWithLocus API</div>
-								<div class="text-slate-500"><span class="text-slate-600">[14:25:05]</span> <span class="text-indigo-400">Drip:</span> recharge link sent to user</div>
-								<div class="text-slate-500"><span class="text-slate-600">[15:10:33]</span> <span class="text-emerald-400">Drip:</span> user topped up 2.00 USDC</div>
-								<div class="text-slate-500"><span class="text-slate-600">[15:10:35]</span> <span class="text-emerald-400">Drip:</span> container restored — resuming from last state</div>
-							</div>
-						</div>
-					</div>
-				</div>
+          <!-- Feature 3 -->
+          <div class="bg-[#0D0D0D] rounded-lg p-8 border border-[#1F1F1F] hover:border-[#2A2A2A] transition-colors">
+            <div class="w-12 h-12 bg-[#10B981]/10 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-[#10B981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-3">Smart billing recovery</h3>
+            <p class="text-[#A1A1AA] text-sm leading-relaxed">
+              Low balance warnings via email. Consumption receipts.
+              Plan optimization suggestions. "Switch to monthly — you'd save $12 this period."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<p class="text-center text-slate-400 mt-8 max-w-2xl mx-auto">
-					This is not a cron job. This is not a billing webhook.
-					<span class="text-white">This is an agent making real decisions about your users' runtime.</span>
-				</p>
-			</div>
-		</section>
+    <!-- How it looks in practice -->
+    <section class="py-24 bg-[#111111]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-[#00B8D9] text-sm font-medium tracking-wider uppercase">How It Works</span>
+          <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mt-4 mb-6">
+            A safety net for subscription billing
+          </h2>
+          <p class="text-lg text-[#A1A1AA]">
+            Drip layers onto your existing Stripe/SaaS setup. It doesn't replace your billing —
+            it makes it smarter.
+          </p>
+        </div>
 
-		<!-- Use Cases Section -->
-		<section class="py-24">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center max-w-2xl mx-auto mb-16">
-					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-4">What developers are building on Drip</h2>
-					<p class="text-lg text-slate-600">From research tools to developer CLIs — any app with episodic compute.</p>
-				</div>
+        <div class="max-w-4xl mx-auto space-y-6">
+          <!-- Step 1 -->
+          <div class="flex gap-6 items-start">
+            <div class="w-10 h-10 rounded-full bg-[#00B8D9] flex items-center justify-center shrink-0 text-[#0A0A0A] font-semibold">
+              1
+            </div>
+            <div class="flex-1 pb-8 border-b border-[#1F1F1F]">
+              <h3 class="text-xl font-semibold text-white mb-3">Plug into your API</h3>
+              <p class="text-[#A1A1AA] mb-4">
+                Add the Drip SDK to your Python app. Use the <code class="text-[#00B8D9] bg-[#1F1F1F] px-1.5 py-0.5 rounded">@meter</code> decorator on any function that costs compute.
+              </p>
+              <div class="bg-[#0D0D0D] rounded-lg border border-[#1F1F1F] p-4 font-mono text-sm">
+                <div class="text-[#52525B]"># One decorator. Every call tracked.</div>
+                <div class="text-white mt-2"><span class="text-[#3B82F6]">@drip</span>.meter(cost=<span class="text-[#F59E0B]">0.007</span>, event=<span class="text-[#10B981]">"image_generate"</span>)</div>
+                <div class="text-white"><span class="text-[#3B82F6]">async def</span> <span class="text-[#00B8D9]">generate_image</span>(prompt: str, user_id: str):</div>
+                <div class="text-white pl-4"><span class="text-[#3B82F6]">return await</span> stable_diffusion.generate(prompt)</div>
+              </div>
+            </div>
+          </div>
 
-				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-					<!-- Card 1: Research Tools -->
-					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-3">Research tools</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							Deep research agents that run weekly, billed by the search.
-							Users pay $0.40 for a great research cycle or $0 for a week
-							they didn't need it.
-						</p>
-					</div>
+          <!-- Step 2 -->
+          <div class="flex gap-6 items-start">
+            <div class="w-10 h-10 rounded-full bg-[#00B8D9] flex items-center justify-center shrink-0 text-[#0A0A0A] font-semibold">
+              2
+            </div>
+            <div class="flex-1 pb-8 border-b border-[#1F1F1F]">
+              <h3 class="text-xl font-semibold text-white mb-3">The agent watches</h3>
+              <p class="text-[#A1A1AA] mb-4">
+                Drip polls user balances every 60 seconds. It tracks who is approaching tier limits.
+                It knows projected monthly usage from patterns.
+              </p>
+              <div class="bg-[#0D0D0D] rounded-lg border border-[#1F1F1F] p-4 font-mono text-sm text-[#A1A1AA]">
+                <span class="text-[#52525B]">[09:14:32]</span> <span class="text-[#00B8D9]">Agent:</span> user_7a3f hitting Pro tier limit (2,847/3,000)
+                <br/><span class="text-[#52525B]">[09:14:33]</span> <span class="text-[#00B8D9]">Agent:</span> Projected: 3,200 calls this month → $23 overage
+                <br/><span class="text-[#52525B]">[09:14:34]</span> <span class="text-[#F59E0B]">Action:</span> Sending tier-cliff intervention email
+              </div>
+            </div>
+          </div>
 
-					<!-- Card 2: AI-powered SaaS -->
-					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-3">AI-powered SaaS</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							Any app that calls LLMs, scraping APIs, or data providers.
-							Stop eating API costs for inactive users. Meter the calls,
-							not the months.
-						</p>
-					</div>
+          <!-- Step 3 -->
+          <div class="flex gap-6 items-start">
+            <div class="w-10 h-10 rounded-full bg-[#00B8D9] flex items-center justify-center shrink-0 text-[#0A0A0A] font-semibold">
+              3
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold text-white mb-3">Customers save. You retain.</h3>
+              <p class="text-[#A1A1AA] mb-4">
+                User gets a helpful email: "You're tracking to exceed your plan.
+                Switch to consumption billing for this month? You'll pay ~$17 instead of $50 for the next tier up."
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-[#10B981]/10 border border-[#10B981]/20 rounded-lg p-4">
+                  <div class="text-2xl font-bold text-[#10B981]">+34%</div>
+                  <div class="text-sm text-[#A1A1AA] mt-1">Tier-cliff churn reduction</div>
+                </div>
+                <div class="bg-[#00B8D9]/10 border border-[#00B8D9]/20 rounded-lg p-4">
+                  <div class="text-2xl font-bold text-[#00B8D9]">$12-40</div>
+                  <div class="text-sm text-[#A1A1AA] mt-1">Avg. save per caught user</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					<!-- Card 3: Developer Tools & CLIs -->
-					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-3">Developer tools & CLIs</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							Internal tools, agents, and pipelines that run episodically.
-							Credits sit idle between runs. No monthly charge for
-							infrastructure that sleeps.
-						</p>
-					</div>
+    <!-- Technical Integration -->
+    <section id="integration" class="py-24 border-b border-[#1F1F1F]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-[#00B8D9] text-sm font-medium tracking-wider uppercase">Technical Integration</span>
+            <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mt-4 mb-6">
+              Works with your stack
+            </h2>
+            <p class="text-lg text-[#A1A1AA] mb-6">
+              Drip is middleware. It doesn't replace Stripe. It doesn't force you off your existing auth.
+              It layers onto what you have.
+            </p>
 
-					<!-- Card 4: ML/AI Training Pipelines -->
-					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-3">ML training pipelines</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							Experiment tracking and model training that bursts GPU usage.
-							Pay only for compute time, not idle clusters waiting for your
-							next experiment.
-						</p>
-					</div>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-6 h-6 rounded-full bg-[#10B981]/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-[#10B981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-white font-medium">Python SDK</p>
+                  <p class="text-sm text-[#71717A]">Async-first. Decorator-based. 5-minute integration.</p>
+                </div>
+              </div>
 
-					<!-- Card 5: Data Processing Services -->
-					<div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-						<div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
-							<svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
-							</svg>
-						</div>
-						<h3 class="text-lg font-semibold text-slate-900 mb-3">Data processing</h3>
-						<p class="text-slate-600 text-sm leading-relaxed">
-							ETL jobs, report generators, and analytics pipelines that run
-							on demand. Scale to zero between batches. No surprise bills
-							for forgotten cron jobs.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+              <div class="flex items-start gap-4">
+                <div class="w-6 h-6 rounded-full bg-[#10B981]/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-[#10B981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-white font-medium">Any container platform</p>
+                  <p class="text-sm text-[#71717A]">AWS, GCP, Fly, Railway, or BuildWithLocus.</p>
+                </div>
+              </div>
 
-		<!-- Pricing Section -->
-		<section id="pricing" class="py-24 bg-slate-50/50">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center max-w-2xl mx-auto mb-16">
-					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-4">What does $X actually get you?</h2>
-					<p class="text-lg text-slate-600">No tiers. No monthly plans. Just transparent, usage-based pricing.</p>
-				</div>
+              <div class="flex items-start gap-4">
+                <div class="w-6 h-6 rounded-full bg-[#10B981]/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-[#10B981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-white font-medium">Flexible persistence</p>
+                  <p class="text-sm text-[#71717A]">SQLite for dev. Postgres for prod.</p>
+                </div>
+              </div>
 
-				<div class="max-w-3xl mx-auto">
-					<!-- Calculator Widget -->
-					<div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
-						<label class="block text-sm font-medium text-slate-700 mb-4">
-							I expect my users to make approximately
-						</label>
-						<div class="flex items-center gap-4 mb-6">
-							<input
-								type="range"
-								min="10"
-								max="500"
-								value="150"
-								class="flex-1 h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
-								oninput="document.getElementById('api-calls').textContent = this.value; document.getElementById('cost-estimate').textContent = '$' + (this.value * 0.012).toFixed(2)"
-							/>
-							<span class="text-2xl font-semibold text-slate-900 w-20 text-right">
-								<span id="api-calls">150</span>
-							</span>
-							<span class="text-slate-500">calls</span>
-						</div>
+              <div class="flex items-start gap-4">
+                <div class="w-6 h-6 rounded-full bg-[#10B981]/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-4 h-4 text-[#10B981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-white font-medium">Self-hosted or managed</p>
+                  <p class="text-sm text-[#71717A]">Run the agent yourself or let us host it.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-						<div class="space-y-4 pt-6 border-t border-slate-100">
-							<div class="flex justify-between items-center">
-								<span class="text-slate-600">Cost per active user per month</span>
-								<span class="text-2xl font-semibold text-indigo-600" id="cost-estimate">$1.80</span>
-							</div>
-							<div class="flex justify-between items-center">
-								<span class="text-slate-600">User who doesn't log in that month</span>
-								<span class="text-xl font-semibold text-emerald-600">$0</span>
-							</div>
-						</div>
+          <div class="bg-[#0D0D0D] rounded-lg border border-[#1F1F1F] overflow-hidden">
+            <div class="flex items-center gap-2 px-4 py-3 border-b border-[#1F1F1F] bg-[#111111]">
+              <div class="flex gap-1.5">
+                <div class="w-3 h-3 bg-[#EF4444] rounded-full"></div>
+                <div class="w-3 h-3 bg-[#F59E0B] rounded-full"></div>
+                <div class="w-3 h-3 bg-[#10B981] rounded-full"></div>
+              </div>
+              <div class="flex-1 text-center">
+                <span class="text-xs font-mono text-[#52525B]">integration.py</span>
+              </div>
+            </div>
+            <div class="p-6 font-mono text-sm space-y-3">
+              <div class="text-[#52525B]">from drip import DripClient, DripConfig</div>
+              <div></div>
+              <div class="text-white">client = <span class="text-[#3B82F6]">DripClient</span>(<span class="text-[#3B82F6]">DripConfig</span>(</div>
+              <div class="text-white pl-4">api_key=<span class="text-[#10B981]">"drip_..."</span>,</div>
+              <div class="text-white">))</div>
+              <div></div>
+              <div class="text-[#52525B]"># Meter any function</div>
+              <div class="text-white"><span class="text-[#3B82F6]">@client</span>.meter(cost=<span class="text-[#F59E0B]">0.007</span>)</div>
+              <div class="text-white"><span class="text-[#3B82F6]">async def</span> <span class="text-[#00B8D9]">generate</span>(user_id: str, prompt: str):</div>
+              <div class="text-white pl-4"><span class="text-[#3B82F6]">return await</span> llm.complete(prompt)</div>
+              <div></div>
+              <div class="text-[#52525B]"># Start the agent</div>
+              <div class="text-white">client.start_polling()</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<div class="mt-6 p-4 bg-slate-50 rounded-xl">
-							<p class="text-sm text-slate-600">
-								<span class="text-slate-400">Compare to:</span> A $29/mo subscription = $29 whether they
-								log in or not. <span class="text-red-600">93% more expensive for light users.</span>
-							</p>
-						</div>
-					</div>
+    <!-- Early Access CTA -->
+    <section id="early-access" class="py-24">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <span class="text-[#00B8D9] text-sm font-medium tracking-wider uppercase">Early Access</span>
+        <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mt-4 mb-6">
+          Stop losing customers at the cliff
+        </h2>
+        <p class="text-lg text-[#A1A1AA] mb-8">
+          We're working with a small group of AI SaaS companies to refine the tier-cliff intervention engine.
+          If your customers are balking at forced upgrades, let's talk.
+        </p>
 
-					<p class="text-center text-sm text-slate-500 mt-8">
-						Drip charges a <span class="font-medium text-slate-700">5%</span> platform fee on credits consumed.
-						You set your own compute pricing on top of that. <span class="font-medium text-slate-700">You keep the margin.</span>
-					</p>
-				</div>
-			</div>
-		</section>
+        <form class="max-w-md mx-auto space-y-4" onsubmit="event.preventDefault(); alert('Thanks! We\'ll be in touch soon.');">
+          <div>
+            <input
+              type="email"
+              placeholder="you@company.com"
+              class="w-full bg-[#111111] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-[#52525B] focus:outline-none focus:border-[#00B8D9] transition-colors"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Company name"
+              class="w-full bg-[#111111] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-[#52525B] focus:outline-none focus:border-[#00B8D9] transition-colors"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[#00B8D9] text-[#0A0A0A] font-medium py-3 rounded-lg hover:bg-[#00a5c4] transition-colors"
+          >
+            Request Early Access
+          </button>
+        </form>
 
-		<!-- Integration Docs Preview -->
-		<section id="docs" class="py-24">
-			<style>
-				/* CSS-only tabs */
-				.tab-input { display: none; }
-				.tab-label {
-					cursor: pointer;
-					padding: 0.75rem 1.5rem;
-					font-size: 0.875rem;
-					font-weight: 500;
-					color: rgb(100 116 139);
-					border-bottom: 2px solid transparent;
-					transition: all 0.15s;
-				}
-				.tab-label:hover { color: rgb(51 65 85); }
-				#tab-install:checked ~ .tab-nav label[for="tab-install"],
-				#tab-integrate:checked ~ .tab-nav label[for="tab-integrate"],
-				#tab-deploy:checked ~ .tab-nav label[for="tab-deploy"] {
-					color: rgb(99 102 241);
-					border-bottom-color: rgb(99 102 241);
-				}
-				.tab-content { display: none; }
-				#tab-install:checked ~ .tab-panels #panel-install,
-				#tab-integrate:checked ~ .tab-panels #panel-integrate,
-				#tab-deploy:checked ~ .tab-panels #panel-deploy {
-					display: block;
-					animation: fadeIn 0.2s ease;
-				}
-				@keyframes fadeIn {
-					from { opacity: 0; transform: translateY(4px); }
-					to { opacity: 1; transform: translateY(0); }
-				}
-			</style>
+        <p class="text-sm text-[#52525B] mt-6">
+        Currently onboarding 5 companies. No commitment required.
+      </p>
+      </div>
+    </section>
 
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center max-w-2xl mx-auto mb-12">
-					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-4">Quick start</h2>
-					<p class="text-lg text-slate-600">From zero to metered app in 3 tabs.</p>
-				</div>
+    <!-- Footer -->
+    <footer class="py-12 border-t border-[#1F1F1F]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-3">
+            <div class="w-7 h-7 bg-[#00B8D9] rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-[#0A0A0A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 2v20M2 12h20"/>
+              </svg>
+            </div>
+            <span class="font-semibold">drip</span>
+          </div>
+          <p class="text-[#52525B] text-sm">
+            Autonomous billing intelligence for AI-powered SaaS
+          </p>
+          <div class="flex items-center gap-6 text-sm text-[#71717A]">
+            <a href="#" class="hover:text-white transition-colors">Twitter</a>
+            <a href="#" class="hover:text-white transition-colors">GitHub</a>
+            <a href="#" class="hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-				<div class="max-w-3xl mx-auto">
-					<div class="bg-slate-950 rounded-2xl overflow-hidden">
-						<!-- CSS Tabs -->
-						<input type="radio" name="quickstart-tabs" id="tab-install" class="tab-input" checked>
-						<input type="radio" name="quickstart-tabs" id="tab-integrate" class="tab-input">
-						<input type="radio" name="quickstart-tabs" id="tab-deploy" class="tab-input">
+    <!-- Terminal Animation Script -->
+    <script>
+      const demoLines = [
+        { ts: '[09:14]', agent: 'Agent:', msg: 'checking usage for sarah@company.com this billing period', type: 'agent' },
+        { ts: '[09:14]', agent: 'Agent:', msg: '47 AI generations this week — tracking ahead of monthly average', type: 'agent' },
+        { ts: '[09:14]', agent: 'Agent:', msg: 'projected: 3,200 calls by month-end (Pro tier: 3,000)', type: 'agent' },
+        { ts: '[09:14]', agent: 'Agent:', msg: '⚠️  user approaching tier cliff — $50 → $100 forced upgrade', type: 'warning' },
+        { ts: '[09:14]', agent: 'Agent:', msg: 'calculating alternative: consumption billing @ $0.007/call', type: 'agent' },
+        { ts: '[09:14]', agent: 'Agent:', msg: '→ 3,200 calls × $0.007 = $22.40 vs $100 subscription tier', type: 'agent' },
+        { ts: '[09:14]', agent: 'Agent:', msg: '✓ sending intervention email with consumption option', type: 'success' },
+        { ts: '', agent: '', msg: '', type: 'pause' },
+        { ts: '[09:47]', agent: 'User:', msg: 'clicked "Switch to pay-as-you-go this month"', type: 'user' },
+        { ts: '[09:47]', agent: 'Agent:', msg: '✓ billing mode updated: consumption override active', type: 'success' },
+        { ts: '[09:47]', agent: 'System:', msg: '$77.60 saved. Customer retained.', type: 'highlight' },
+        { ts: '', agent: '', msg: '', type: 'pause' },
+        { ts: '[10:23]', agent: 'Agent:', msg: 'monitoring 247 users | 3 tier-cliff risks detected today', type: 'agent' },
+        { ts: '[10:23]', agent: 'Agent:', msg: 'avg. intervention savings: $34.20 per caught user', type: 'agent' },
+      ];
 
-						<!-- Tab Navigation -->
-						<div class="tab-nav flex border-b border-slate-800 bg-slate-900/30">
-							<label for="tab-install" class="tab-label">Install</label>
-							<label for="tab-integrate" class="tab-label">Integrate</label>
-							<label for="tab-deploy" class="tab-label">Deploy</label>
-						</div>
+      let lineIndex = 0;
+      const terminalContent = document.getElementById('terminal-content');
+      const terminalContainer = document.getElementById('terminal');
 
-						<!-- Tab Panels -->
-						<div class="tab-panels">
-							<!-- Install Panel -->
-							<div id="panel-install" class="tab-content p-6 font-mono text-sm">
-								<div class="text-slate-500 mb-2"># Install the SDK</div>
-								<div class="text-slate-300">pip install drip-sdk</div>
-								<div class="text-slate-500 mt-4 mb-2"># Or with poetry</div>
-								<div class="text-slate-300">poetry add drip-sdk</div>
-								<div class="text-slate-500 mt-4 mb-2"># Requirements</div>
-								<div class="text-slate-400">Python 3.10+ · Async-first · Built for BuildWithLocus</div>
-							</div>
+      function getTimestampClass() {
+        return 'text-[#52525B]';
+      }
 
-							<!-- Integrate Panel -->
-							<div id="panel-integrate" class="tab-content p-6 font-mono text-sm">
-								<div class="text-slate-500">from drip import DripClient, DripConfig</div>
-								<div class="text-slate-300"></div>
-								<div class="text-slate-300">client = <span class="text-blue-400">DripClient</span>(<span class="text-blue-400">DripConfig</span>(</div>
-								<div class="text-slate-300 pl-4">locus_api_key=<span class="text-emerald-400">"claw_dev_..."</span>,</div>
-								<div class="text-slate-300 pl-4">bwl_api_key=<span class="text-emerald-400">"claw_dev_..."</span>,</div>
-								<div class="text-slate-300">))</div>
-								<div class="text-slate-300"></div>
-								<div class="text-slate-500"># Meter any function</div>
-								<div class="text-slate-300"><span class="text-indigo-400">@client.meter</span>(cost=<span class="text-amber-400">0.007</span>)</div>
-								<div class="text-slate-300"><span class="text-purple-400">async def</span> <span class="text-blue-400">process</span>(data):</div>
-								<div class="text-slate-300 pl-4"><span class="text-purple-400">return await</span> llm.complete(data)</div>
-							</div>
+      function getAgentClass(type) {
+        switch(type) {
+          case 'agent': return 'text-[#3B82F6]';
+          case 'warning': return 'text-[#F59E0B]';
+          case 'success': return 'text-[#10B981]';
+          case 'user': return 'text-[#A1A1AA]';
+          case 'highlight': return 'text-[#00B8D9] font-medium';
+          default: return 'text-[#A1A1AA]';
+        }
+      }
 
-							<!-- Deploy Panel -->
-							<div id="panel-deploy" class="tab-content p-6 font-mono text-sm">
-								<div class="text-slate-500 mb-2"># Deploy to BuildWithLocus</div>
-								<div class="text-slate-300">git push locus main</div>
-								<div class="text-slate-500 mt-4 mb-2"># Or use the BWL CLI</div>
-								<div class="text-slate-300">bwl deploy --env production</div>
-								<div class="text-slate-500 mt-4 mb-2"># Drip handles automatically:</div>
-								<div class="text-slate-400">✓ Per-user container provisioning</div>
-								<div class="text-slate-400">✓ Credit tracking & hibernation</div>
-								<div class="text-slate-400">✓ Low-balance notifications</div>
-								<div class="text-slate-400">✓ Instant restore on top-up</div>
-							</div>
-						</div>
-					</div>
+      function getMessageClass(type) {
+        switch(type) {
+          case 'warning': return 'text-[#F59E0B]';
+          case 'success': return 'text-[#10B981]';
+          case 'user': return 'text-[#A1A1AA]';
+          case 'highlight': return 'text-[#00B8D9] font-medium';
+          default: return 'text-[#A1A1AA]';
+        }
+      }
 
-					<div class="flex justify-center gap-4 mt-8">
-						<a href="#" class="text-indigo-600 hover:text-indigo-700 font-medium text-sm">View full docs →</a>
-						<a href="#" class="text-slate-500 hover:text-slate-700 font-medium text-sm">API Reference →</a>
-						<a href="#" class="text-slate-500 hover:text-slate-700 font-medium text-sm">BuildWithLocus Setup →</a>
-					</div>
-				</div>
-			</div>
-		</section>
+      function typeLine() {
+        if (lineIndex >= demoLines.length) {
+          // Restart after a pause
+          setTimeout(() => {
+            terminalContent.innerHTML = '';
+            lineIndex = 0;
+            typeLine();
+          }, 5000);
+          return;
+        }
 
-		<!-- Self-Hosting Section -->
-		<section class="py-24 bg-slate-50">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="max-w-3xl mx-auto text-center">
-					<h2 class="text-4xl font-semibold tracking-tight text-slate-900 mb-6">Skin in the game</h2>
-					<p class="text-xl text-slate-600 leading-relaxed">
-						Drip itself runs on BuildWithLocus, paid for by the credits it
-						manages. The agent has economic incentives to keep your service
-						running efficiently — it only survives while it's providing value.
-					</p>
-					<p class="text-slate-500 mt-4 font-medium">
-						That's not a metaphor. That's the architecture.
-					</p>
-				</div>
-			</div>
-		</section>
+        const line = demoLines[lineIndex];
 
-		<!-- Final CTA -->
-		<section class="py-24">
-			<div class="max-w-4xl mx-auto px-6 text-center">
-				<h2 class="text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900 mb-6">
-					Stop charging for months.<br/>Start charging for value.
-				</h2>
-				<div class="flex flex-wrap justify-center gap-4 mt-8">
-					<a href="#docs" class="bg-indigo-600 text-white px-8 py-4 rounded-xl font-medium hover:bg-indigo-700 transition-colors inline-flex items-center gap-2">
-						Add Drip to your app
-						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-						</svg>
-					</a>
-					<a href="#" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-medium hover:bg-slate-50 transition-colors">
-						Read the docs
-					</a>
-				</div>
-				<p class="text-sm text-slate-500 mt-8">
-					Built on BuildWithLocus + PayWithLocus · Powered by Base · Open source
-				</p>
-			</div>
-		</section>
+        if (line.type === 'pause') {
+          lineIndex++;
+          setTimeout(typeLine, 800);
+          return;
+        }
 
-		<!-- Footer -->
-		<footer class="py-12 border-t border-slate-200">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="flex flex-col md:flex-row items-center justify-between gap-6">
-					<div class="flex items-center gap-2">
-						<div class="w-7 h-7 bg-indigo-600 rounded-lg flex items-center justify-center">
-							<svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2c.552 0 1 .448 1 1v2.101a7.002 7.002 0 011.913 1.5l1.792-1.035c.478-.276 1.09-.112 1.366.366s.112 1.09-.366 1.366l-1.792 1.035a7.002 7.002 0 010 3.336l1.792 1.035c.478.276.642.888.366 1.366s-.888.642-1.366.366l-1.792-1.035A7.002 7.002 0 0113 17.899V20c0 .552-.448 1-1 1s-1-.448-1-1v-2.101a7.002 7.002 0 01-1.913-1.5l-1.792 1.035c-.478.276-1.09.112-1.366-.366s-.112-1.09.366-1.366l1.792-1.035a7.002 7.002 0 010-3.336l-1.792-1.035c-.478-.276-.642-.888-.366-1.366s.888-.642 1.366-.366l1.792 1.035A7.002 7.002 0 0111 6.101V4c0-.552.448-1 1-1z"/>
-						</svg>
-						</div>
-						<span class="font-semibold">drip</span>
-					</div>
-					<p class="text-slate-500 text-sm">
-						Pay-as-you-go compute infrastructure for developers
-					</p>
-					<div class="flex items-center gap-6">
-						<a href="https://github.com/0xshae/drip" class="text-slate-400 hover:text-slate-600 transition-colors">
-							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-								<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-							</svg>
-						</a>
-						<a href="https://twitter.com/0xshae" class="text-slate-400 hover:text-slate-600 transition-colors">
-							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-								<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</body>
+        const lineDiv = document.createElement('div');
+        lineDiv.className = 'terminal-line flex gap-2';
+        lineDiv.style.animationDelay = '0s';
+
+        const tsSpan = document.createElement('span');
+        tsSpan.className = getTimestampClass();
+        tsSpan.textContent = line.ts;
+
+        const agentSpan = document.createElement('span');
+        agentSpan.className = getAgentClass(line.type);
+        agentSpan.textContent = line.agent;
+
+        const msgSpan = document.createElement('span');
+        msgSpan.className = getMessageClass(line.type);
+
+        lineDiv.appendChild(tsSpan);
+        if (line.agent) {
+          lineDiv.appendChild(agentSpan);
+        }
+        lineDiv.appendChild(msgSpan);
+
+        terminalContent.appendChild(lineDiv);
+
+        // Typewriter effect for the message
+        let charIndex = 0;
+        const typeChar = () => {
+          if (charIndex < line.msg.length) {
+            msgSpan.textContent += line.msg[charIndex];
+            charIndex++;
+            setTimeout(typeChar, 15);
+          } else {
+            lineIndex++;
+            setTimeout(typeLine, line.type === 'pause' ? 500 : 400);
+          }
+        };
+
+        // Scroll to bottom
+        terminalContainer.scrollTop = terminalContainer.scrollHeight;
+
+        typeChar();
+      }
+
+      // Start the animation when page loads
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(typeLine, 500);
+      });
+    </script>
+  </body>
 </html>
