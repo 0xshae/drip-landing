@@ -40,8 +40,11 @@ import '../styles/global.css';
           <a href="#early-access" class="hover:text-white transition-colors">Early Access</a>
         </div>
         <div class="flex items-center gap-4">
-          <a href="#early-access" class="bg-white text-[#0A0A0A] px-4 py-2 rounded-md text-sm font-medium hover:bg-[#A1A1AA] transition-colors">
-            Get Early Access
+          <a href="https://svc-moc5b8xm9m8egh12.buildwithlocus.com/dashboard" class="text-[#A1A1AA] hover:text-white transition-colors text-sm font-medium">
+            Demo
+          </a>
+          <a href="http://localhost:8080/signup" class="bg-[#00B8D9] text-[#0A0A0A] px-4 py-2 rounded-md text-sm font-medium hover:bg-[#00a5c4] transition-colors">
+            Sign Up
           </a>
         </div>
       </nav>
@@ -62,14 +65,14 @@ import '../styles/global.css';
             Drip bridges the gap — let heavy users pay-as-they-go while keeping everyone else on predictable subscriptions.
           </p>
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="#early-access" class="bg-[#00B8D9] text-[#0A0A0A] px-8 py-4 rounded-md text-base font-medium hover:bg-[#00a5c4] transition-all inline-flex items-center gap-2">
-              Get Early Access
+            <a href="http://localhost:8080/signup" class="bg-[#00B8D9] text-[#0A0A0A] px-8 py-4 rounded-md text-base font-medium hover:bg-[#00a5c4] transition-all inline-flex items-center gap-2">
+              Start Free
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
             </a>
-            <a href="#problem" class="bg-transparent text-white border border-[#2A2A2A] px-8 py-4 rounded-md text-base font-medium hover:border-[#71717A] transition-colors">
-              See the problem
+            <a href="https://svc-moc5b8xm9m8egh12.buildwithlocus.com/dashboard" class="bg-transparent text-white border border-[#2A2A2A] px-8 py-4 rounded-md text-base font-medium hover:border-[#71717A] transition-colors">
+              View Live Demo
             </a>
           </div>
         </div>
@@ -694,45 +697,32 @@ import '../styles/global.css';
       </div>
     </section>
 
-    <!-- Early Access CTA -->
+    <!-- CTA Section -->
     <section id="early-access" class="py-24">
       <div class="max-w-3xl mx-auto px-6 text-center">
-        <span class="text-[#00B8D9] text-sm font-medium tracking-wider uppercase">Early Access</span>
+        <span class="text-[#00B8D9] text-sm font-medium tracking-wider uppercase">Get Started</span>
         <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mt-4 mb-6">
           Stop losing customers at the cliff
         </h2>
         <p class="text-lg text-[#A1A1AA] mb-8">
-          We're working with SaaS companies to refine the tier-cliff intervention engine.
-          If your customers are balking at forced upgrades, let's talk.
+          Set up Drip in minutes. Connect your BWL account, drop in our SDK,
+          and start catching tier-cliff churn today.
         </p>
 
-        <form class="max-w-md mx-auto space-y-4" onsubmit="event.preventDefault(); alert('Thanks! We\'ll be in touch soon.');">
-          <div>
-            <input
-              type="email"
-              placeholder="you@company.com"
-              class="w-full bg-[#111111] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-[#52525B] focus:outline-none focus:border-[#00B8D9] transition-colors"
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              placeholder="Company name"
-              class="w-full bg-[#111111] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-[#52525B] focus:outline-none focus:border-[#00B8D9] transition-colors"
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            class="w-full bg-[#00B8D9] text-[#0A0A0A] font-medium py-3 rounded-lg hover:bg-[#00a5c4] transition-colors"
-          >
-            Request Early Access
-          </button>
-        </form>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://svc-mo97ngg2n9nd6nub.buildwithlocus.com/signup" class="bg-[#00B8D9] text-[#0A0A0A] px-8 py-4 rounded-md text-base font-medium hover:bg-[#00a5c4] transition-all inline-flex items-center gap-2">
+            Create Free Account
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="https://svc-moc5b8xm9m8egh12.buildwithlocus.com/dashboard" class="bg-transparent text-white border border-[#2A2A2A] px-8 py-4 rounded-md text-base font-medium hover:border-[#71717A] transition-colors">
+            Try Live Demo
+          </a>
+        </div>
 
         <p class="text-sm text-[#52525B] mt-6">
-          Currently onboarding 5 companies. No commitment required.
+          Free for up to 100 users. No credit card required.
         </p>
       </div>
     </section>
